@@ -17,6 +17,7 @@
 
   <h1>Water Station Suppliers</h1>
 
+  
   <form action="/suppliers123" method="POST" class="product-form">
     @csrf
 

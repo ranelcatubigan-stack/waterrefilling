@@ -20,17 +20,17 @@
     <form action="/inventories123" method="POST" class="product-form">
         @csrf
         <div class="form-group">
-            <label>Item Description</label>
-            <input type="text" name="item_name123" placeholder="e.g. Purified 5-Gallon" required>
+            <label>Item Name</label>
+            <input type="text" name="item_name123" required>
         </div>
 
         <div class="form-group">
-            <label>Current Stock</label>
+            <label>Quantity</label>
             <input type="number" name="quantity123" placeholder="0" required>
         </div>
 
         <div class="form-group">
-            <label>Minimum Stock Level</label>
+            <label>Reorder Level</label>
             <input type="number" name="reorder_level123" placeholder="10" required>
         </div>
         

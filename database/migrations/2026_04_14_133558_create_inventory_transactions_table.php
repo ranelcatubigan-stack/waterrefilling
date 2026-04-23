@@ -16,9 +16,9 @@ return new class extends Migration
             $table->unsignedBigInteger('employee_id');
             $table->unsignedBigInteger('inventory_id');
             $table->unsignedBigInteger('supplier_id')->nullable();
-            $table->string('type');
+            $table->string('type')->default('IN');
             $table->integer('quantity');
-            $table->dateTime('date');
+            $table->date('date');
             $table->string('notes');
             $table->timestamps();
 

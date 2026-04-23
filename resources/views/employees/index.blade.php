@@ -11,8 +11,8 @@
 <div class="container">
     <div style="display: flex; gap: 10px; margin-bottom: 20px;">
         <a href="/suppliers" class="nav-bookmark">Suppliers</a>
-        <a href="/employees" class="nav-bookmark">Employees</a>
-        <a href="/inventories" class="nav-bookmark" style="background: var(--water-blue);">Inventories</a>
+        <a href="/employees" class="nav-bookmark" style="background: var(--water-blue); background-color: white;">Employees</a>
+        <a href="/inventories" class="nav-bookmark" >Inventories</a>
     </div>
 
     <h1>Employees</h1>

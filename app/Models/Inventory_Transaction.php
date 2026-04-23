@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Inventory_Transaction extends Model
 {
-    protected $table = 'inventory_transactions';
+    protected $table = 'inventory_transaction';
 
     protected $fillable = [
         'employee_id',
@@ -14,6 +14,8 @@ class Inventory_Transaction extends Model
         'inventory_id',
         'quantity',
         'transaction_type',
+        'date',
+        'notes'
     ];
 
     public function employee()
