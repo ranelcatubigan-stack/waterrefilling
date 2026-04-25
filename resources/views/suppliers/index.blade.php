@@ -13,6 +13,8 @@
       <a href="/inventories" class="nav-bookmark" style="background: var(--water-blue);">Inventories</a>
       <a href="/suppliers" class="nav-bookmark">Suppliers</a>
       <a href="/employees" class="nav-bookmark">Employees</a>
+      <a href="/maintenances" class="nav-bookmark">Maintenances</a>
+        <a href="/transactions" class="nav-bookmark">Transactions</a>
   </div>
 
   <h1>Water Station Suppliers</h1>

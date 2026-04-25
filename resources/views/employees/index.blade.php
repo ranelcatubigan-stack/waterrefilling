@@ -13,6 +13,8 @@
         <a href="/suppliers" class="nav-bookmark">Suppliers</a>
         <a href="/employees" class="nav-bookmark" style="background: var(--water-blue); background-color: white;">Employees</a>
         <a href="/inventories" class="nav-bookmark" >Inventories</a>
+        <a href="/maintenances" class="nav-bookmark">Maintenances</a>
+        <a href="/transactions" class="nav-bookmark">Transactions</a>
     </div>
 
     <h1>Employees</h1>
@@ -47,8 +49,8 @@
         <div class="form-group">
             <label>Role</label>
             <select name="role123" required>
-                <option value="user">User</option>
                 <option value="staff">Staff</option>
+                <option value="admin">Admin</option>
             </select>
         </div>
 

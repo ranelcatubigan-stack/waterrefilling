@@ -14,14 +14,6 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'first_name123' => 'required',
-            'middle_name123' => 'nullable',
-            'last_name123' => 'required',
-            'username123' => 'required|unique:employees,username',
-            'password123' => 'required|min:8',
-            'role123' => ['required', 'in:user,staff'],
-        ]);
 
         Employee::create([
             'first_name' => $request->first_name123,
@@ -44,15 +36,6 @@ class EmployeeController extends Controller
     public function update(Request $request, $id)
     {
         $employee = Employee::findOrFail($id);
-
-        $request->validate([
-            'first_name123' => 'required',
-            'middle_name123' => 'nullable',
-            'last_name123' => 'required',
-            'username123' => 'required|unique:employees,username,' . $id,
-            'password123' => 'nullable|min:8',
-            'role123' => ['required', 'in:user,staff'],
-        ]);
 
         $data = [
             'first_name' => $request->first_name123,
