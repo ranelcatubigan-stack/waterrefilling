@@ -82,17 +82,17 @@
 
         <div class="form-group" style="max-width: 360px; margin-bottom: 20px;">
       <label for="name">Quantity</label>
-      <input type="text" id="name" name="t_quantity" >
+      <input placeholder="10" type="text" id="name" name="t_quantity" >
     </div>
     
         <div class="form-group" style="max-width: 360px; margin-bottom: 20px;">
       <label for="name">Date</label>
-      <input type="date" id="name" name="t_date" >
+      <input placeholder="04/25/2026" type="date" id="name" name="t_date" >
     </div>
 
         <div class="form-group" style="max-width: 360px; margin-bottom: 20px;">
       <label for="name">Notes</label>
-      <input type="text" id="name" name="t_notes" >
+      <input placeholder="Notes" type="text" id="name" name="t_notes" >
     </div>
 
     <button type="submit" class="btn-submit">Save Transaction</button>
@@ -123,11 +123,11 @@
         <td class="td-id">{{ $t->id }}</td>
         <td><span class="category-badge">{{ $t->employee->first_name }}</span></td>
         <td><span class="category-badge">{{ $t->inventory->item_name }}</span></td>
-        <td><span class="category-badge">{{ $t->supplier->supplier_name }}</span></td>
+        <td><span class="category-badge">{{ $t->supplier?->supplier_name ?? '—' }}</span></td>
         <td class="td-name">{{ $t->type }}</td>
         <td class="td-name">{{ $t->quantity }}</td>
         <td class="td-name">{{ $t->date }}</td>
-        <td class="td-name">{{ $t->notes }}</td>
+        <td class="td-name">{{ $t->notes ?? '—' }}</td>
         
         <td>
           <a class="btn-edit" href="/transactions/{{ $t->id }}/transactionsedit">Edit</a>
@@ -145,4 +145,6 @@
 </div>
 
 </body>
+
+
 </html>

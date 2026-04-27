@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('type')->default('IN');
             $table->integer('quantity');
             $table->date('date');
-            $table->string('notes');
+            $table->string('notes')->nullable();
             $table->timestamps();
 
             $table->foreign('employee_id')

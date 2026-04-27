@@ -53,7 +53,7 @@
 
         <div class="form-group" style="max-width: 360px; margin-bottom: 20px;">
       <label for="name">Equipment Name: </label>
-      <input type="text" id="name" name="m_equipment_name" >
+      <input placeholder="Water Tank" type="text" id="name" name="m_equipment_name" >
     </div>
 
             <div class="form-group" style="max-width: 260px; margin-bottom: 20px;">
@@ -76,7 +76,7 @@
 
         <div class="form-group" style="max-width: 360px; margin-bottom: 20px;">
       <label for="name">Cost</label>
-      <input type="text" id="name" name="m_cost" >
+      <input placeholder="₱ 1500" type="text" id="name" name="m_cost" >
     </div>
 
             <div class="form-group" style="max-width: 260px; margin-bottom: 20px;">
@@ -118,7 +118,7 @@
         <td class="td-name">{{ $m->maintenance_type }}</td>
         <td class="td-name">{{ $m->start_date }}</td>
         <td class="td-name">{{ $m->completion_date }}</td>
-        <td class="td-name">{{ $m->cost }}</td>
+        <td class="td-name">₱ {{ $m->cost }}</td>
         <td class="td-name">{{ $m->status }}</td>
         
         <td>
