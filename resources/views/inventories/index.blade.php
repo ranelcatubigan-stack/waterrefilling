@@ -9,13 +9,13 @@
 <body>
 
 <div class="container">
-    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-        <a href="/suppliers" class="nav-bookmark">Suppliers</a>
-        <a href="/employees" class="nav-bookmark">Employees</a>
-        <a href="/inventories" class="nav-bookmark" style="background: var(--water-blue);">Inventories</a>
-        <a href="/maintenances" class="nav-bookmark">Maintenances</a>
-        <a href="/transactions" class="nav-bookmark">Transactions</a>
-    </div>
+  <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+      <a href="/inventories" class="nav-bookmark" style="background: var(--water-blue);">Inventories</a>
+      <a href="/suppliers" class="nav-bookmark" style="background: var(--water-blue);">Suppliers</a>
+      <a href="/employees" class="nav-bookmark" style="background: var(--water-blue);">Employees</a>
+      <a href="/maintenances" class="nav-bookmark" style="background: var(--water-blue);">Maintenances</a>
+        <a href="/transactions" class="nav-bookmark" style="background: var(--water-blue);">Transactions</a>
+  </div>
 
     <h1>Water Refilling Inventory</h1>
 
