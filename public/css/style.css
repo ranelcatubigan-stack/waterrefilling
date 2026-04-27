@@ -145,35 +145,3 @@ input:focus {
     clip-path: none; /* Removed the book bookmark shape */
 }
 
-/* Style for the Dropdown */
-select {
-    width: 200px; /* Fixed width so it doesn't stretch */
-    padding: 12px;
-    border: 2px solid var(--soft-cyan);
-    border-radius: 8px;
-    background: #fcfdfe;
-    color: var(--deep-ocean);
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    appearance: none; /* Removes default browser styling */
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300a8e8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 15px;
-}
-
-select:focus {
-    outline: none;
-    border-color: var(--water-blue);
-    box-shadow: 0 0 8px rgba(0, 168, 232, 0.2);
-}
-
-/* Ensure the label and select stay on separate lines */
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start; /* Keeps the dropdown to the left */
-}

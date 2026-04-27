@@ -18,7 +18,7 @@
   </div>
 
     <h1>Employees</h1>
-
+    <div class = "employee-form">
     <form action="/employees123" method="POST" class="product-form">
         @csrf
         <div class="form-group">
@@ -53,6 +53,7 @@
                 <option value="admin">Admin</option>
             </select>
         </div>
+</div>
 
         <button type="submit" class="btn-submit">Add Employee</button>
     </form>
